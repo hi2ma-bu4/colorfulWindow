@@ -9,27 +9,27 @@ PATH="%WINDIR%\Microsoft.NET\Framework\v4.0.30319";%PATH%
 Set enc=%1
 Set tmp=%2
 Set dec=%enc:~-2%
-echo.# C#¥VB.NETƒRƒ“ƒpƒCƒ‰[‚ÌŽg‚¢•û
+echo.# C#ï½¥VB.NETã‚³ãƒ³ãƒ‘ã‚¤ãƒ©ãƒ¼ã®ä½¿ã„æ–¹
 echo.# 
 echo.# ^>csc ???.cs
-echo.# ‚Åc#ƒRƒ“ƒpƒCƒ‹
+echo.# ã§c#ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«
 echo.# ^>csc /target:winexe ???.cs
-echo.# ‚ÅWindowsApp‚Æ‚µ‚ÄƒRƒ“ƒpƒCƒ‹
+echo.# ã§WindowsAppã¨ã—ã¦ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«
 echo.#
 echo.# ^>vbc ???.vb
-echo.# ‚ÅVB.NETƒRƒ“ƒpƒCƒ‹
+echo.# ã§VB.NETã‚³ãƒ³ãƒ‘ã‚¤ãƒ«
 echo.# ^>vbc /target:winexe ???.vb
-echo.# ‚ÅWindowsApp‚Æ‚µ‚ÄƒRƒ“ƒpƒCƒ‹
+echo.# ã§WindowsAppã¨ã—ã¦ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«
 echo.#
-echo.# ˆö‚Ý‚ÉWindows‚ÅŠî–{“I‚ÉŽg‚¦‚éŒ¾Œê(Šg’£Žq)‚Í
+echo.# å› ã¿ã«Windowsã§åŸºæœ¬çš„ã«ä½¿ãˆã‚‹è¨€èªž(æ‹¡å¼µå­)ã¯
 echo.# bat,cs,css,html(hta),js,ps,vb,vbs,vba,(ini,exe)
-echo.# ‚Å‚·B
+echo.# ã§ã™ã€‚
 echo.# 
 if "%dec%"=="cs" (
-	echo.# ‘I‘ð‚³‚ê‚½ƒtƒ@ƒCƒ‹:%enc%
+	echo.# é¸æŠžã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«:%enc%
 	csc %enc%
 ) else if "%dec%"=="vb" (
-	echo.# ‘I‘ð‚³‚ê‚½ƒtƒ@ƒCƒ‹:%enc%
+	echo.# é¸æŠžã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«:%enc%
 	vbc %enc%
 ) else (
 	cmd
